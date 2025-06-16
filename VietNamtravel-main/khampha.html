@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Danh sách tỉnh tương tác đẹp</title>
+    <style>
+        /* Reset and base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d9f0f7, #059669);
+            color: #1f2937;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 48px 24px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 48px;
+            text-shadow: 0 3px 8px rgba(5, 150, 105, 0.6);
+            text-align: center;
+            max-width: 800px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 24px;
+            max-width: 960px;
+            width: 100%;
+        }
+        a.province {
+            background-color: #ffffffcc;
+            border-radius: 20px;
+            padding: 24px 12px;
+            box-shadow: 0 10px 20px rgba(5, 150, 105, 0.15);
+            text-decoration: none;
+            color: #047a4f;
+            font-weight: 700;
+            font-size: 1.15rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition:
+                    background-color 0.3s ease,
+                    color 0.3s ease,
+                    box-shadow 0.4s ease,
+                    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+        a.province:hover,
+        a.province:focus {
+            background: linear-gradient(135deg, #059669, #34d399);
+            color: #ffffff;
+            box-shadow: 0 22px 48px rgba(5, 150, 105, 0.5);
+            transform: translateY(-6px) scale(1.05);
+            outline: none;
+        }
+        a.province:active {
+            transform: translateY(-1px) scale(1.02);
+            box-shadow: 0 10px 24px rgba(5, 150, 105, 0.4);
+        }
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 32px;
+            }
+            a.province {
+                font-size: 1rem;
+                padding: 18px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Khám phá các tỉnh Việt Nam</h1>
+<div class="grid">
+    <a href="hanoi.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Hà Nội</a>
+    <a href="hochinminh.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Hồ Chí Minh</a>
+    <a href="danang.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Đà Nẵng</a>
+    <a href="cantho.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Cần Thơ</a>
+    <a href="quangninh.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Quảng Ninh</a>
+    <a href="binhduong.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Bình Dương</a>
+    <a href="dalat.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Đà Lạt</a>
+    <a href="nghean.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Nghệ An</a>
+    <a href="phutho.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Phú Thọ</a>
+    <a href="vungtau.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Vũng Tàu</a>
+    <a href="hue.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Huế</a>
+    <a href="binhphuoc.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Bình Phước</a>
+    <a href="lamdong.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Lâm Đồng</a>
+    <a href="thanhhoa.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Thanh Hóa</a>
+    <a href="bacninh.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Bắc Ninh</a>
+    <a href="bacgiang.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Bắc Giang</a>
+    <a href="langson.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Lạng Sơn</a>
+    <a href="thaibinh.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Thái Bình</a>
+    <a href="tuyenquang.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Tuyên Quang</a>
+    <a href="quangnam.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Quảng Nam</a>
+    <a href="binhthuan.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Bình Thuận</a>
+    <a href="namdinh.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Nam Định</a>
+    <a href="quangngai.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Quảng Ngãi</a>
+    <a href="kontum.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Kon Tum</a>
+    <a href="daklak.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Đắk Lắk</a>
+    <a href="giaingang.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Gia Lai</a>
+    <a href="longan.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Long An</a>
+    <a href="tayninh.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Tây Ninh</a>
+    <a href="haugiang.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Hậu Giang</a>
+    <a href="baclieu.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Bạc Liêu</a>
+    <a href="socTrang.html" class="province" target="_blank" rel="noopener noreferrer" tabindex="0">Sóc Trăng</a>
+</div>
+</body>
+</html>
+
